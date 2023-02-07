@@ -43,9 +43,18 @@ B- corection de bug
 Exemples :
 
 "I-§1-README.md" -> Initialisation du fichier README.md
-"D-§2-README.md-Description of Branch management" -> Modification de la section gestion des branches du fichier README.md
+"D-§2-README.md-Description of Branch management" -> Modification de la section gestion des branches
+   du fichier README.md
 "B-§10-Style ignore on main" -> Correction d'un bug de style sur plusieurs fichiers
 
+  *GESTION DES REPERTOIRES :*
+
+- Le répertoire asset contient toutes les images, médias utilisés, textes d'origine, ainsi 
+  que la maquette du projet.
+- Le répertoire style contient les fichiers css avec style.css qui gère le style général et le reset, 
+  home.css les particularités de la page home et events.css les particularités de la page events.
+- Le répertoire statement contient la notice de l'exam et le sujet. 
+  Il sera dans le fichier .gitignore.
 
 
 
