@@ -56,5 +56,10 @@ Exemples :
 - Le répertoire statement contient la notice de l'exam et le sujet. 
   Il sera dans le fichier .gitignore.
 
+  *GESTION DES NOMAGE HTML ET CSS :*
+
+id et classe en camelCase en anglais.
+
+
 
 
