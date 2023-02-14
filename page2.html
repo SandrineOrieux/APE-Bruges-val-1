@@ -9,20 +9,43 @@
   integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
   crossorigin="anonymous">
   <title>Evènements de l'APE de Bruges</title>
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+  crossorigin="anonymous">
+  
+  
+  <!--typos Dancing script et oswald sur google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=
+  Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--link css-->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/styleEvents.css">
 </head>
 <body>
 
-  <header>
-    <!--pages navigation menu-->
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>Evènements</li>
+  <header class="ColorBGBlue">
+    <!--other pages navigation -->
+    <nav class="containerReset" >
+      <ul class="navhand">
+        <li class="bigTitle textWhite home"><a href="index.html">Home</a></li>
+        <li class="handstatic"><img src="./asset/mainGEvent.jpg" alt="main superposée" class="hand"></li>
+        <li class="bigTitle textWhite events">Evènements</li>
+        <li class="handhover" ><img src="./asset/mainDEvent.jpg" alt="main superposée" class="hand"></li>
       </ul>
     </nav>
-    <img src="./asset/logo.jpg" alt="Logo de l'association">
-    <h1>Saison 2022-2023</h1>
-  </header>
+
+    <img src="./asset/logo.jpg" alt="Logo de l'association" class="logo img-fluid containerReset">
+
+    <!--navigation on this page-->
+    <h1 class="midleTitle textWhite titleWhite">Saison 2022-2023</h1>
+ 
+</header>
 
   <main>
     <h3>Evènements à venir</h3>

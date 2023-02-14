@@ -47,6 +47,10 @@ a {
   font-weight: 200;
 }
 .midleTitle{
+  font-size: 4.5vw;
+  font-weight: 200;
+}
+.smallTitle{
   font-size : 3vw;
   font-weight: 400;
 }
