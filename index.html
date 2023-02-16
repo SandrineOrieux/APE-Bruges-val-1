@@ -11,7 +11,7 @@
   rel="stylesheet" 
   integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
   crossorigin="anonymous">
-  
+
   
   <!--typos Dancing script et oswald sur google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
 </head>
 <body>
 
-  <header class="ColorBGBlue">
+  <header class="ColorBGBlue" id="up">
       <!--other pages navigation -->
       <nav class="containerReset" >
         <ul class="navhand">
@@ -51,47 +51,60 @@
   </header>
 
   <main>
-    <h1>Bienvenue sur le site de l'association des parents d'élève des écoles de 
-      Bruges-Capbis-Mifaget</h1>
+    <h1 class="textBlack bigTitle titleHome">Bienvenue sur le site de l'APE</h1>
     
-    <section>
-      <h2 id="news">News</h2>
-      <p>Organisation du tournoi d'échec</p>
-      <button><a href="page2.html">En savoir plus</a></button>
+    <section class="section">
+      <img src="./asset/carnet-table-horizontal.jpg" alt="cahier" class="noteBook">
+      <h2 id="news" class="News textBlue sectionTitle">News</h2>
+      <p class="chess textBlue bigTitle">Organisation du <br> tournoi d'échec</p>
+      <button class="buttonStyle ColorBGBlue buttonChess"><a href="page2.html">En savoir plus</a></button>
     </section>
 
-    <section>
-      <h2 id="presentation">Présentation</h2>
+
+
+    <section class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook">
+      <h2 id="presentation" class="presentation textBlue sectionTitle" >Présentation</h2>
       <!--provisional photos: to ask the metraises-->
-      <img src="./asset/cinema.jpg" alt="Photo du cinema d'Arudy">
-      <img src="./asset/jeux.jpg" alt="équipements pédagogique">
-      <p>Nous sommes une association indépendante à but non lucratif (Loi 1901) constituée de 
-        parents d’élèves bénévoles. Indépendante des représentants des parents d’élèves élus.</p>
-      <p>Nous <strong>récoltons des fonds</strong>  pour que toutes les sorties scolaires de
+      <img src="./asset/cinema.jpg" alt="Photo du cinema d'Arudy" class="cinema">
+      <img src="./asset/jeux.jpg" alt="équipements pédagogique" class="games">
+      <p class="presentationText textBlue smallText">Nous sommes une association indépendante à but
+        non lucratif (Loi 1901). Nous sommes des parents d’élèves bénévoles et indépendants des 
+        représentants des parents d’élèves.<br><br>
+        Nous <em>récoltons des fonds</em>  pour que toutes les sorties scolaires de
         tous les élèves de la meternelle et de l'école primaire puissent être gratuites, participer 
-        à l’achat de matériel, organiser une kermesse chaque année.</p>
+        à l’achat de matériel et organiser une kermesse chaque année.</p>
+    </section>
+    
+    <a href="#up" class="arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="36">
+        <path fill="none" d="M0 0h24v24H0z"/><path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 
+        4l7.778 7.778-1.414 1.414L13 7.828z" fill="rgba(20,57,141,1)"/></svg>
+    </a>
+
+    <section class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook">
+      <h2 id="president" class="president textBlue sectionTitle">Le mot du <br> président</h2>
+      <img src="./asset/Wanted.jpg" alt="affiche recherche parents" class="wanted">
+      <p class="presidentText textBlue smallText">Lorem ipsum dolor sit amet, consectetur adipiscing
+         elit. <br> Integer lacus metus, imperdiet ac consectetur at, suscipit eget neque.<br><br> 
+         Nulla facilisi. Nulla tempor turpis vitae tortor pharetra elementum. Nullam et varius risus.
+         Phasellus non scelerisque urna, vel sollicitudin orci.  </p>
+      <p class="joinUs textBlue midleTitle"><strong>Rejoingnez-nous !</strong></p>
     </section>
 
-    <section>
-      <h2 id="president">Le mot du président</h2>
-      <img src="./asset/Wanted.jpg" alt="affiche recherche parents">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus metus, imperdiet ac 
-        consectetur at, suscipit eget neque. Nulla facilisi. Nulla tempor turpis vitae tortor 
-        pharetra elementum. Nullam et varius risus. Phasellus non scelerisque urna, vel sollicitudin
-         orci. Cras augue diam, faucibus vel sapien sit amet, elementum fringilla augue. 
-         Phasellus ut commodo ipsum. </p>
-      <p><strong>rejoingnez-nous !</strong></p>
-    </section>
-
-    <section>
-      <h2 id ="AG">le compte rendu de l'AG 2022-2023</h2>
-      <object data="./asset/PV Assemblée Générale 2022-2.pdf" type="application/pdf" width="500px" height="400px"></object>
+    <section class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook">
+      <h2 id ="AG" class="generalAssembly textBlue sectionTitle">Le compte rendu<br> de l'AG 
+        <br>2022</h2>
+      <object data="./asset/PV Assemblée Générale 2022-2.pdf" type="application/pdf"
+       width="100px" height="200px" class="pdfObject"></object>
+       <a href="./asset/PV Assemblée Générale 2022-2.pdf" class="buttonStyle ColorBGBlue buttuonGA"> 
+        Téléchargez-moi</a>
     </section>
 
     <!--flèche Bootstrap Icons-->
-    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
-      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
-    </svg></a>
+    
   </main>
   
   <footer class="ColorBGBlue">
