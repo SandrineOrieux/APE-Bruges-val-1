@@ -12,6 +12,14 @@ a {
   color: inherit;
 }
 
+.titlereset{
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
 /*bootstrap reset*/
 .containerReset{
   display: inherit;
@@ -81,6 +89,10 @@ a {
 
 /*layout*/
 
+body{
+  width: 100%;
+  height: 100%;
+}
 
   /*header*/
 header {
@@ -141,9 +153,9 @@ header nav ul{
   grid-row: 1 / 2;
   grid-column: 2 / 3;
 }
-/*end style header*/
+/*end header*/
 
-/*main style*/
+/*main*/
 .section{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -152,7 +164,7 @@ header nav ul{
   align-items: center;
 }
 .bigSection{
- height: 234px;
+ height: 73vw;
 }
 
 .noteBook{
@@ -163,10 +175,43 @@ header nav ul{
   z-index: 0;
 }
 
-
-footer {
-  
-  height: 10vw;
+  /*arrow fixed*/
+.arrow{
+  position: fixed;
+  z-index: 2;
+  justify-self: end;
 }
 
+/*footer*/
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  height: 50vw;
+  justify-content: center;
+
+}
+
+.bootstrapreset{
+  margin: 0;
+  padding: 0;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap : 5px;
+}
+
+.contactBorder{
+  border-right: 2px solid white;
+}
+
+.office{
+  text-align: center;
+}
 

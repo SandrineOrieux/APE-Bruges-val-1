@@ -1,6 +1,6 @@
+/*layout header*/
 
-
-/*nav in this page*/
+  /*nav in this page*/
 .navInPage {
   grid-column : span 2;
 }
@@ -147,9 +147,3 @@ main{
   margin-top: 20px;
 }
 
-/*arrow fixed*/
-.arrow{
-  position: fixed;
-  z-index: 2;
-  justify-self: end;
-}
