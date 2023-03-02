@@ -1,3 +1,5 @@
+/*Header*/
+
 .titleWhite{
   grid-column: 1/3;
   grid-row: 2/3;
@@ -5,4 +7,57 @@
   margin: 0;
   padding: 0;
   line-height: 0;
+}
+
+/*main*/
+main{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% repeat(6, 1fr);
+}
+
+.titleMain{
+  display: flex;
+  justify-content: space-around;
+  ;
+}
+/*sections*/
+.eventTitle{
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+  z-index: 1;
+  justify-self: center;
+  align-self: start;
+  margin: 0;
+  padding: 15px;
+}
+.eventImg{
+  width: 30vw;
+  grid-row: 2 / 5;
+  grid-column: 1 / 3;
+  z-index: 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.eventText{
+  grid-row: 1 / 4;
+  grid-column: 3 / 5;
+  z-index: 1;
+  justify-self: center;
+  align-self: end;
+  margin: 0 12px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+
+.buttonEvent{
+  grid-row: 4 / 5;
+  grid-column: 4 / 5;
+  z-index: 1;
+  justify-self: end;
+  align-self: start;
+  margin-right: 5vw;
 }

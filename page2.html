@@ -48,25 +48,61 @@
 </header>
 
   <main>
-    <h3>Evènements à venir</h3>
-    <p><a href="#pastEvents">Accés aux évènements passés</a></p>
-    
-    <section>
-      <h2>Tournoi d'échec</h2>
-      <img src="./asset/Affiche tournoi Bruges.png" alt="enfant qui joue aux échecs">
-      <ul>
-        <li>Date : 15/03/2023</li>
-        <li>Lieux : salle de l'asile à Bruges</li>
-        <li>Description : Samy de l'école des échecs de Nay avec les maîtresses des écoles de Bruges
-           organise un tournoi d'échec. L'APE proposera un snack.
+
+    <div class="titleMain">
+      <h3 class="textBlack bigTitle">Evènements à venir</h3>
+      <p><a href="#pastEvents" class="textBlack smallText">Accés aux évènements <br> passés</a></p>
+    </div>
+
+     <!--flèche Bootstrap Icons-->
+     <a href="#up" class="arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="36">
+        <path fill="none" d="M0 0h24v24H0z"/><path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 
+        4l7.778 7.778-1.414 1.414L13 7.828z" fill="rgba(20,57,141,1)"/></svg>
+    </a>
+
+    <!-- Modal chess -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <section itemscope itemtype="https://schema.org/Event" class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook ">
+      <h2 class="eventTitle textBlue sectionTitle" itemprop="name">Tournoi <br> d'échec</h2>
+      <img src="./asset/Affiche tournoi Bruges.png" class="eventImg" alt="Affiche du tournoi" 
+      itemprop="image">
+      <ul class="eventText textBlue smallText">
+        <li itemprop="startDate" content="2023-03-19T09:30">Date : 19/03/2023</li>
+        <li itemprop="location" itemscope itemtype="https://schema.org/Place">Lieux : 
+          <span itemprop="name">salle de l'asile</span> à 
+          <span itemprop="addressLocality">Bruges</span></li>
+        <li itemprop="Description">Description : Samy de l'école des échecs de Nay avec les 
+          maîtresses des écoles de Bruges organisent un tournoi d'échec. L'APE proposera un snack.
         </li>
       </ul>
-      <button>En savoir plus</button>
+      <button  type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-toggle="modal" 
+      data-bs-target="#exampleModal">En savoir plus</button>
+      
     </section>
 
     <section>
       <h2>Marché aux fleurs</h2>
-      <img src="./asset/marche-aux-fleurs-ile.jpg" alt="marché aux fleurs">
+      <img src="./asset/marche-aux-fleurs-ile.jpg"  width="50px" alt="marché aux fleurs">
       <ul>
         <li>Date : 08/05/2023</li>
         <li>Lieux : Sous la mairie</li>
@@ -80,7 +116,7 @@
     <section>
       <h2>Kermesse</h2>
       <video controls>
-        <source src="./asset/kermesse.mp4" type="video/mp4">
+        <source src="./asset/kermesse.mp4"  width="50px" type="video/mp4">
         <p>Votre navigateur ne prend pas en charge les vidéos en mp4.
            Voici <a href="./asset/VID_20220625_154432.mp4">un lien pour télécharger la vidéo</a>.</p>
       </video>
@@ -99,7 +135,7 @@
 
     <section>
       <h2>Coupe du monde de foot</h2>
-      <img src="./asset/Coupe du monde.jpg" alt="affiche de la finale de la coupe du monde 2022">
+      <img src="./asset/Coupe du monde.jpg"  width="50px" alt="affiche de la finale de la coupe du monde 2022">
       <ul>
         <li>Date : 18/12/2022</li>
         <li>Lieux : salle de l'asile à Bruges</li>
@@ -113,7 +149,7 @@
 
     <section>
       <h2>Marché de noël</h2>
-      <img src="./asset/marchédenoel.jpg" alt="affiche du marché de noël">
+      <img src="./asset/marchédenoel.jpg"  width="50px" alt="affiche du marché de noël">
       <ul>
         <li>Date : 11/12/2022</li>
         <li>Lieux : salle de l'asile à Bruges</li>
@@ -123,39 +159,44 @@
       </ul>
       <button>En savoir plus</button>
     </section>
-    
-    <!--flèche Bootstrap Icons-->
-    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
-      <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
-    </svg></a>
+
   </main>
 
-  <footer>
-    <h3>Nous contacter</h3>
-    <ul>
-      <li><a href="mailto:apebruges@gmail.com">apebruges@gmail.com</a></li>
-      <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-      </svg></li>
-      <li>Courrier : place St-jean école maternelle 64800 Bruges</li>
-    </ul>
-    <ul></ul>
-    
-    <table>
-      <caption>Le bureau</caption>
-      <tr>
-        <td>Président</td>
-        <td>Cyril Micallef</td>
-      </tr>
-      <tr>
-        <td>Secretaire</td>
-        <td>Marie-Aline Greco</td>
-      </tr>
-      <tr>
-        <td>Trésorière</td>
-        <td>Sandrine Orieux</td>
-      </tr>
-    </table>
+  <footer class="ColorBGBlue textWhite">
+
+    <div class="contact contactBorder">
+      <h3 class="middleTitle titlereset">Nous contacter :</h3>
+      <ul class="bootstrapreset contact">
+        <li><a href="mailto:apebruges@gmail.com" class="smallText">apebruges@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100013956188735" target="_blank"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+          class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347
+          6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 
+          1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.
+          604 6.75-3.934 6.75-7.951z"/></svg></a>
+        </li>
+        <li class="smallText">Place St-jean <br> école maternelle <br> 64800 Bruges
+        </li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h3 class="middleTitle titlereset">Le bureau :</h3>
+      <table class="table caption-top table-borderless office">
+        <tr>
+          <td class="smallText textWhite office" scope="row">Président</td>
+          <td class="smallText textWhite office">Cyril Micallef</td>
+        </tr>
+        <tr>
+          <td class="smallText textWhite office" scope="row">Secretaire</td>
+          <td class="smallText textWhite office">Marie-Aline Greco</td>
+        </tr>
+        <tr>
+          <td class="smallText textWhite office" scope="row">Trésorière</td>
+          <td class="smallText textWhite office">Sandrine Orieux</td>
+        </tr>
+      </table>
+    </div>
   </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
