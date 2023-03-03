@@ -1,25 +1,16 @@
 /*Header*/
 
 .titleWhite{
-  grid-column: 1/3;
-  grid-row: 2/3;
-  justify-self: center;
   margin: 0;
-  padding: 0;
-  line-height: 0;
+  padding-bottom: 0.2rem;
+  text-align: center;
 }
 
 /*main*/
-main{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 10% repeat(6, 1fr);
-}
 
 .titleMain{
   display: flex;
   justify-content: space-around;
-  ;
 }
 /*sections*/
 .eventTitle{
