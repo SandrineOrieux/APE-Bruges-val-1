@@ -29,15 +29,17 @@
 </head>
 <body>
 
-  <header class="ColorBGBlue">
+  <header class="ColorBGBlue" id="up">
     <!--other pages navigation -->
     <div>
       <nav class="containerReset" >
         <ul class="navhand">
           <li class="bigTitle textWhite home"><a href="index.html">Home</a></li>
-          <li class="handstatic"><img src="./asset/mainGEvent.jpg" alt="main superposée" class="hand"></li>
+          <li class="handstatic"><img src="./asset/mainGEvent.jpg" alt="main superposée" 
+            class="hand"></li>
           <li class="bigTitle textWhite events">Evènements</li>
-          <li class="handhover" ><img src="./asset/mainDEvent.jpg" alt="main superposée" class="hand"></li>
+          <li class="handhover" ><img src="./asset/mainDEvent.jpg" alt="main superposée" 
+            class="hand"></li>
         </ul>
       </nav>
 
@@ -45,104 +47,270 @@
 
     </div>
 
-    <h1 class="midleTitle textWhite titleWhite">Saison 2022-2023</h1>
+    <h1 class="smallTitle textWhite titleWhite">Saison 2022-2023</h1>
  
   </header>
 
   <main>
 
     <div class="titleMain">
-      <h3 class="textBlack bigTitle">Evènements à venir</h3>
-      <p><a href="#pastEvents" class="textBlack smallText">Evènements <br> passés</a></p>
+      <h2 class="textBlack bigTitle titleMain">Evènements à venir</h2>
+      <a href="#pastEvents" class="textBlack smallText titleMain">Evènements passés</a>
     </div>
 
      <!--flèche Bootstrap Icons-->
      <a href="#up" class="arrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="36">
-        <path fill="none" d="M0 0h24v24H0z"/><path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 
+        <path fill="none" d="M0 0h34v24H0z"/><path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 
         4l7.778 7.778-1.414 1.414L13 7.828z" fill="rgba(20,57,141,1)"/></svg>
     </a>
 
-    <!-- Modal chess -->
+    <!--chess Modal bootstrap -->
+    <div class="modal fade" id="chessModal" tabindex="-1" aria-labelledby="chess" 
+    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 textBlue" id="chess">Tournoi d'échecs</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./asset/Affiche tournoi Bruges.png" alt="affiche du tournoi d'échec">
+            
+            <p>Participation : 5 euros par joueur ou 10 euros par famille
 
+              Le paiement se fera sur place lors du pointage (entre 9h30 et 9h45) – 1ère partie 10h
+              
+              Tout le monde jouera 7 parties tout au long de la journée, que l’on gagne ou que l’on perde.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="buttonStyle ColorBGBlue buttonEvent">
+              <a href="https://bearn-echecs.fr/2023/01/22/tournoi-de-bruges/" target="_blank">
+                Inscription ici
+              </a>
+            </button>
 
-    <section itemscope itemtype="https://schema.org/Event" class="section bigSection">
-      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook ">
-      <h2 class="eventTitle textBlue sectionTitle" itemprop="name">Tournoi <br> d'échec</h2>
-      <img src="./asset/Affiche tournoi Bruges.png" class="eventImg" alt="Affiche du tournoi" 
-      itemprop="image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--chess-->
+    <section itemscope itemtype="http://schema.org/Event" itemtype="https://schema.org/Event" 
+    class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook "/>
+      <h3 itemprop="name" class="eventTitle textBlue sectionTitle" itemprop="name">Tournoi <br/> d'échecs</h3>
+      <img itemprop="image" src="./asset/jeu-déchecs-enfants.jpg" class="eventImg" alt="Affiche du tournoi" itemprop="image"/>
       <ul class="eventText textBlue smallText">
-        <li itemprop="startDate" content="2023-03-19T09:30">Date : 19/03/2023</li>
-        <li itemprop="location" itemscope itemtype="https://schema.org/Place">Lieux : 
-          <span itemprop="name">salle de l'asile</span> à 
-          <span itemprop="addressLocality">Bruges</span></li>
-        <li itemprop="Description">Description : Samy de l'école des échecs de Nay avec les 
-          maîtresses des écoles de Bruges organisent un tournoi d'échec. L'APE proposera un snack.
+        <li itemprop="startDate" content="2023-03-19T09:30">Date : 
+          <span itemprop="startDate" content="2023-03-19">19/03/2023</span>
+        </li>
+        <li itemprop="location" itemscope itemtype="http://schema.org/Place" itemprop="location" itemscope="" itemtype="https://schema.org/Place">Lieux : 
+          <span itemprop="name" itemprop="name">salle de l'Asile</span> à 
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality" itemprop="addressLocality">Bruges</span>
+          </span>
+        </li>
+        <li itemprop="offers" itemscope itemtype="http://schema.org/Offer" itemprop="price">Participation : 
+          <span itemprop="price">5€/personnes ou 10€ par famille</span>
+        </li>
+        <li itemprop="Description">Description : 
+          <span itemprop="description">Samy de l'école des échecs de Nay avec les 
+          maîtresses des écoles de Bruges organisent un tournoi d'échec. L'APE proposera un snack.</span>
         </li>
       </ul>
-      <button  type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-toggle="modal" 
-      data-bs-target="#exampleModal">En savoir plus</button>
-      
+      <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-toggle="modal" data-bs-target="#chessModal">En savoir plus</button>
     </section>
 
-    <section>
-      <h2>Marché aux fleurs</h2>
-      <img src="./asset/marche-aux-fleurs-ile.jpg"  width="50px" alt="marché aux fleurs">
-      <ul>
-        <li>Date : 08/05/2023</li>
-        <li>Lieux : Sous la mairie</li>
-        <li>Description : Traditionnnel marchés au fleurs en partenariat avec Sylvie culture, 
-          Il y aura également des boissons et des gateaux en vente.
+    <!--flowers Modal bootstrap-->
+    <div class="modal fade" id="flowersModal" tabindex="-1" aria-labelledby="flowers" 
+    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 textBlue" id="flowers">Marché aux fleurs</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./asset/logos_sylvie.png" alt="logo partenaire">
+            <p>Comme chaques année nous proposons un marché aux fleurs </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--flowers-->
+    <section itemscope itemtype="http://schema.org/Event" itemtype="https://schema.org/Event" 
+    class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook "/>
+      <h3 itemprop="name" class="eventTitle textBlue sectionTitle" itemprop="name">Marché <br/>
+         aux fleurs</h3>
+      <img itemprop="image" src="./asset/marche-aux-fleurs-ile.jpg" class="eventImg" 
+      alt="image d'un marché aux fleurs" itemprop="image"/>
+      <ul class="eventText textBlue smallText">
+        <li itemprop="startDate" content="2023-03-19T09:30">Date : 
+          <span itemprop="startDate" content="2023-03-19">08/05/2023</span>
+        </li>
+        <li itemprop="location" itemscope itemtype="http://schema.org/Place" itemprop="location" itemscope="" itemtype="https://schema.org/Place">Lieux : 
+          <span itemprop="name" itemprop="name">sous la mairie</span> à 
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality" itemprop="addressLocality">Bruges</span>
+          </span>
+        </li>
+        <li itemprop="Description">Description : 
+          <span itemprop="description">Traditionnnel marchés au fleurs en partenariat avec Sylvie culture, 
+            Il y aura également des boissons et des gateaux en vente.</span>
         </li>
       </ul>
-      <button>En savoir plus</button>
+      <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-toggle="modal" data-bs-target="#flowersModal">En savoir plus</button>
     </section>
 
-    <section>
-      <h2>Kermesse</h2>
-      <video controls>
-        <source src="./asset/kermesse.mp4"  width="50px" type="video/mp4">
-        <p>Votre navigateur ne prend pas en charge les vidéos en mp4.
-           Voici <a href="./asset/VID_20220625_154432.mp4">un lien pour télécharger la vidéo</a>.</p>
-      </video>
-      
-      <ul>
-        <li>Date : 24/06/2023</li>
-        <li>Lieux : salle des sports</li>
-        <li>Description : En collaboration, avec les deux écoles nous organisons une kermesse. L'APE
-          offre un spectacle, de nombreux jeux et annimation et un snack toute la journée.
+    <!--schools party Modal bootstrap-->
+    <div class="modal fade" id="schoolModal" tabindex="-1" aria-labelledby="school" 
+    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 textBlue" id="school">Kermesse</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>vidéo de la kermesse 2022</p>
+            <video controls class="img-fluid">
+              <source src="./asset/kermesse.mp4" type="video/mp4">
+              <p>Votre navigateur ne prend pas en charge les vidéos en mp4.
+                 Voici <a href="./asset/VID_20220625_154432.mp4">un lien pour télécharger la vidéo</a>.</p>
+            </video>
+            <p>En collaboration, avec les deux écoles nous organisons une kermesse. L'APE
+              offre un spectacle, de nombreux jeux et annimation et un snack toute la journée.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--schools party-->
+    <section itemscope itemtype="http://schema.org/Event" itemtype="https://schema.org/Event" 
+    class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook "/>
+      <h3 itemprop="name" class="eventTitle textBlue sectionTitle" itemprop="name">Fête des <br> écoles</h3>
+      <img itemprop="image" src="./asset/image-kermesse-provisoire.jpg" class="eventImg" 
+      alt="kermesse" itemprop="image"/>
+      <ul class="eventText textBlue smallText">
+        <li itemprop="startDate" content="2023-03-19T09:30">Date : 
+          <span itemprop="startDate" content="2023-03-19">24/06/2023</span>
+        </li>
+        <li itemprop="location" itemscope itemtype="http://schema.org/Place" itemprop="location" itemscope="" itemtype="https://schema.org/Place">Lieux : 
+          <span itemprop="name" itemprop="name">salle des sports</span> à 
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality" itemprop="addressLocality">Bruges</span>
+          </span>
+        </li>
+        <li itemprop="Description">Description : 
+          <span itemprop="description">En collaboration, avec les deux écoles nous organisons une kermesse. L'APE
+            offre un spectacle, de nombreux jeux et annimation et un snack toute la journée.</span>
         </li>
       </ul>
-      <button>En savoir plus</button>
+      <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-toggle="modal" data-bs-target="#schoolModal">En savoir plus</button>
+    </section>
+   
+    <h2 id ="pastEvents" class="textBlack bigTitle titleMain">Evènements déjà passés</h2>
+
+    <!--soccer Modal bootstrap-->
+    <div class="modal fade" id="soccerModal" tabindex="-1" aria-labelledby="soccer" 
+    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 textBlue" id="soccer">Coupe du monde de foot</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./asset/Coupe du monde.jpg" alt="affiche de la coupe du monde">
+            
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--soccer-->
+    <section itemscope itemtype="http://schema.org/Event" itemtype="https://schema.org/Event" 
+    class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook "/>
+      <h3 itemprop="name" class="eventTitle textBlue sectionTitle" itemprop="name">Coupe du <br/> monde</h3>
+      <img itemprop="image" src="./asset/ballon.jpg" class="eventImg" alt="Affiche du tournoi" itemprop="image"/>
+      <ul class="eventText textBlue smallText">
+        <li itemprop="startDate" content="2023-03-19T09:30">Date : 
+          <span itemprop="startDate" content="2023-03-19">18/12/2022</span>
+        </li>
+        <li itemprop="location" itemscope itemtype="http://schema.org/Place" itemprop="location" itemscope="" itemtype="https://schema.org/Place">Lieux : 
+          <span itemprop="name" itemprop="name">salle de l'Asile</span> à 
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality" itemprop="addressLocality">Bruges</span>
+          </span>
+        </li>
+        <li itemprop="Description">Description : 
+          <span itemprop="description">A l'occasion de la finale de la coupe du monde, nous organisons une 
+            retransmission en direct sur grand écran du match. Bière et snack sur place.
+            Venez supporter les bleus!!!</span>
+        </li>
+      </ul>
+      <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-toggle="modal" data-bs-target="#soccerModal">En savoir plus</button>
     </section>
 
-    <h3 id ="pastEvents">Evènements déjà passés</h3>
-
-    <section>
-      <h2>Coupe du monde de foot</h2>
-      <img src="./asset/Coupe du monde.jpg"  width="50px" alt="affiche de la finale de la coupe du monde 2022">
-      <ul>
-        <li>Date : 18/12/2022</li>
-        <li>Lieux : salle de l'asile à Bruges</li>
-        <li>Description : A l'occasion de la finale de la coupe du monde, nous organisons une 
-          retransmission en direct sur grand écran du match. Bière et snack sur place.
-          Venez supporter les bleus!!!
+    <!--christmas Modal bootstrap-->
+    <div class="modal fade" id="christmasModal" tabindex="-1" aria-labelledby="christmas" 
+    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 textBlue" id="christmas">Marché de Noël</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="./asset/marchédenoel.jpg" alt="affiche du marché de noël">
+            
+            <p></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--christmas-->
+    <section itemscope itemtype="http://schema.org/Event" itemtype="https://schema.org/Event" 
+    class="section bigSection">
+      <img src="./asset/carnet-table.jpg" alt="cahier" class="noteBook "/>
+      <h3 itemprop="name" class="eventTitle textBlue sectionTitle" itemprop="name">Marché <br/> de Noël</h3>
+      <img itemprop="image" src="./asset/noel.jpg" class="eventImg" alt="Affiche du tournoi" itemprop="image"/>
+      <ul class="eventText textBlue smallText">
+        <li itemprop="startDate" content="2023-03-19T09:30">Date : 
+          <span itemprop="startDate" content="2023-03-19">11/12/2022</span>
+        </li>
+        <li itemprop="location" itemscope itemtype="http://schema.org/Place" itemprop="location" itemscope="" itemtype="https://schema.org/Place">Lieux : 
+          <span itemprop="name" itemprop="name">salle de l'Asile</span> à 
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality" itemprop="addressLocality">Bruges</span>
+          </span>
+        </li>
+        <li itemprop="Description">Description : 
+          <span itemprop="description">Venez rencontrer nos 17 exposants locaux avec passage du père noël. 
+            Nombreuses annimations, snack et boissons de 10h à 17h.</span>
         </li>
       </ul>
-      <button>En savoir plus</button>
-    </section>
-
-    <section>
-      <h2>Marché de noël</h2>
-      <img src="./asset/marchédenoel.jpg"  width="50px" alt="affiche du marché de noël">
-      <ul>
-        <li>Date : 11/12/2022</li>
-        <li>Lieux : salle de l'asile à Bruges</li>
-        <li>Description : Venez rencontrer nos 17 exposants locaux avec passage du père noël. 
-          Nombreuses annimations, snack et boissons de 10h à 17h.
-        </li>
-      </ul>
-      <button>En savoir plus</button>
+      <button type="button" class="buttonStyle ColorBGBlue buttonEvent" data-bs-toggle="modal" data-bs-target="#christmasModal">En savoir plus</button>
     </section>
 
   </main>
@@ -158,7 +326,7 @@
           class="bi bi-facebook" viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347
           6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 
-          1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.
+          1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h3.218l-.354 2.326H9.25V16c3.824-.
           604 6.75-3.934 6.75-7.951z"/></svg></a>
         </li>
         <li class="smallText">Place St-jean <br> école maternelle <br> 64800 Bruges

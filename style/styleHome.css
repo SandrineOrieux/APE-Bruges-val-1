@@ -14,10 +14,7 @@
   }
 
 /*layout main*/
-.titleHome{
-  justify-self: center;
-  margin-top: 10px;
-}
+
   /*section one : News*/
 .News{
   grid-row: 1 / 5;
